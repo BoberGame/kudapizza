@@ -1,0 +1,1463 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+	<title>Куда Пицца</title>
+</head>
+
+<body>
+
+<div class="page">
+
+
+
+	<!-- Header -->
+	<header class="header" id="header">
+		<div class="container">
+			<div class="header__first" id="headerFirst">
+				<div class="header__first-left">
+					<div class="header__city">
+						<img class="header__pin-icon" src="images/icons/pin.svg" alt="">
+						<a class="header__city-name" href="#">Москва</a>
+						<img class="header__down-icon" src="images/icons/down.svg" alt="">
+					</div>
+					<a class="header__adress" href="#">Проверить адрес</a>
+					<span class="header__delivery">Среднее время доставки*: <b>00:24:19</b></span>
+				</div>
+				<div class="header__first-right">
+					<span class="header__time">Время работы: с 11:00 до 23:00</span>
+					<img class="login__icon login__icon--header" src="images/icons/personal.svg" alt="">
+					<a class="login login--header" href="#">Войти в аккаунт</a>
+				</div>
+			</div>
+
+
+			<div class="header__second" id="headerSecond">
+				<img class="header__logo" src="images/logo.svg" alt="">
+				<nav class="nav" id="navHeader">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a class="nav__link" href="#" data-section="#action">Акции</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#" data-section="#sectionPizza">Пицца</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#" data-section="#sectionSushi">Суши</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#" data-section="#sectionDrinks">Напитки</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#" data-section="#sectionSnacks">Закуски</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#" data-section="#sectionCombo">Комбо</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#" data-section="#sectionDesserts">Десерты</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#" data-section="#sectionSauce">Соусы</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#">Другое
+								<button class="nav__down">
+									<img src="images/icons/down.svg" alt="">
+								</button>
+								<ul class="nav__sub">
+									<li class="nav__item">
+										<a class="nav__link" href="#">Акции</a>
+									</li>
+									<li class="nav__item">
+										<a class="nav__link" href="#">О компании</a>
+									</li>
+									<li class="nav__item">
+										<a class="nav__link" href="#">Пользовательское соглашение</a>
+									</li>
+									<li class="nav__item">
+										<a class="nav__link" href="#">Условия гарантии</a>
+									</li>
+									<li class="nav__item">
+										<a class="nav__link" href="#">Ресторан</a>
+									</li>
+									<li class="nav__item">
+										<a class="nav__link" href="#">Контакты</a>
+									</li>
+									<li class="nav__item">
+										<a class="nav__link" href="#">Поддержка</a>
+									</li>
+									<li class="nav__item">
+										<a class="nav__link" href="#">Отследить заказ</a>
+									</li>
+								</ul>
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<button class="btn btn--bag" type="button">
+					<img class="header__bag-icon" src="images/icons/Shop-bag.svg" alt="">
+					<span>0 ₽</span>
+				</button>
+
+				<div class="burger" id="navToggle">
+					<div class="burger__menu"></div>
+				</div>
+
+				<div class="burger__nav" id="nav">
+					<div class="burger__login">
+						<img class="login__icon login__icon--burger" src="images/icons/personal.svg" alt="">
+						<a class="login login--burger" href="#">Войти в аккаунт</a>
+					</div>
+					<ul class="burger__list">
+						<li class="burger__item">
+							<a href="#" class="burger__link">Акции</a>
+						</li>
+						<li class="burger__item">
+							<a href="#" class="burger__link">О компании</a>
+						</li>
+						<li class="burger__item">
+							<a href="#" class="burger__link">Пользовательское соглашение</a>
+						</li>
+						<li class="burger__item">
+							<a href="#" class="burger__link">Условия гарантии</a>
+						</li>
+						<li class="burger__item">
+							<a href="#" class="burger__link">Ресторан</a>
+						</li>
+						<li class="burger__item">
+							<a href="#" class="burger__link">Контакты</a>
+						</li>
+						<li class="burger__item">
+							<a href="#" class="burger__link">Поддержка</a>
+						</li>
+						<li class="burger__item">
+							<a href="#" class="burger__link">Отследить заказ</a>
+						</li>
+					</ul>
+
+					<ul class="contacts contacts--burger">
+						<li>
+							<div class="contacts__item">
+								<img class="contacts__icon" src="images/icons/phone.svg" alt="">
+								<a class="contacts__link contacts__link--burger" href="tel:+7 (926) 223-10-11">+7 (926) 223-10-11</a>
+							</div>
+						</li>
+						<li>
+							<div class="contacts__item">
+								<img class="contacts__icon contacts__icon--map" src="images/icons/pin-map.svg" alt="">
+								<a class="contacts__link contacts__link--burger" href="#">Москва, ул. Юных Ленинцев, д.99</a>
+							</div>
+						</li>
+						<li>
+							<div class="contacts__social">
+								<img class="contacts__icon" src="images/icons/fb.svg" alt="">
+								<a class="contacts__link contacts__link--burger" href="#" target="_blank">Facebook</a> 
+
+								<img class="contacts__icon" src="images/icons/inst.svg" alt="">
+								<a class="contacts__link contacts__link--burger" href="#" target="_blank">Instagram</a>
+							</div>
+						</li>
+					</ul><!-- /.contacts -->
+					<div class="burger__time">Время работы: с 11:00 до 23:00</div>
+
+				</div><!-- /.burger__nav -->
+			</div><!-- /.header__second -->
+		</div><!-- /.container-->
+	</header><!-- /.header -->
+
+
+
+	<!-- Intro -->
+	<div class="intro">
+		<div class="container">
+			<div class="intro__inner">
+				<nav class="intro__nav">
+					<div class="slider">
+						<div class="slider__item">
+							<a class="intro__nav-link" href="#">
+								<img class="intro__nav-icon" src="images/icons/Fire.svg" alt="">
+								<span class="intro__nav-cat intro__nav-cat--active">Акции</span>
+							</a>
+						</div>
+						<div class="slider__item">
+							<a class="intro__nav-link" href="#">
+								<img class="intro__nav-icon" src="images/icons/Pizza.svg" alt="">
+								<span class="intro__nav-cat">Пицца</span>
+							</a>
+						</div>
+						<div class="slider__item">
+							<a class="intro__nav-link" href="#">
+								<img class="intro__nav-icon" src="images/icons/Sushi.svg" alt="">
+								<span class="intro__nav-cat">Суши</span>
+							</a>
+						</div>
+						<div class="slider__item">
+							<a class="intro__nav-link" href="#">
+								<img class="intro__nav-icon" src="images/icons/Drink.svg" alt="">
+								<span class="intro__nav-cat">Напитки</span>
+							</a>
+						</div>
+						<div class="slider__item">
+							<a class="intro__nav-link" href="#">
+								<img class="intro__nav-icon" src="images/icons/Snacks.svg" alt="">
+								<span class="intro__nav-cat">Закуски</span>
+							</a>
+						</div>
+						<div class="slider__item">
+							<a class="intro__nav-link" href="#">
+								<img class="intro__nav-icon" src="images/icons/Combo.svg" alt="">
+								<span class="intro__nav-cat">Комбо</span>
+							</a>
+						</div>
+						<div class="slider__item">
+							<a class="intro__nav-link" href="#">
+								<img class="intro__nav-icon" src="images/icons/Dessert.svg" alt="">
+								<span class="intro__nav-cat">Десерты</span>
+							</a>
+						</div>
+						<div class="slider__item">
+							<a class="intro__nav-link" href="#">
+								<img class="intro__nav-icon" src="images/icons/Sauce.svg" alt="">
+								<span class="intro__nav-cat">Соусы</span>
+							</a>
+						</div>
+					</div>
+				</nav>
+
+				<div class="intro__action" id="action">
+					<div class="slider__action">
+						<div class="slider__item">
+							<div class="intro__action-col">
+								<a href="#">
+									<img src="images/action-1.jpg" alt="" class="intro__action-img">
+									<div class="intro__action-text">
+										3 средние пиццы<br>от 999 рублей
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="slider__item">
+							<div class="intro__action-col">
+								<a href="#">
+									<img src="images/action-2.jpg" alt="" class="intro__action-img">
+									<div class="intro__action-text">
+										Кэшбек 10% на самовывоз (доставка)
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="slider__item">
+							<div class="intro__action-col">
+								<a href="#">
+									<img src="images/action-1.jpg" alt="" class="intro__action-img">
+									<div class="intro__action-text">
+										3 средние пиццы<br>от 999 рублей
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="slider__item">
+							<div class="intro__action-col">
+								<a href="#">
+									<img src="images/action-2.jpg" alt="" class="intro__action-img">
+									<div class="intro__action-text">
+										Кэшбек 10% на самовывоз (доставка)
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div><!-- /.intro__action -->
+			</div><!-- /.intro__inner -->
+
+		</div><!-- /.contianer -->
+	</div><!-- /.intro -->
+
+
+
+	<!-- Adress -->
+	<div class="adress">
+		<div class="container">
+			<form class="form" action="/" method="post">
+				<label class="form__label" for="form__input">Проверить адрес доставки</label>
+				<div class="form__group">
+					<input class="form__input" id="form__input" name="form__input" type="search" placeholder="Адрес">
+
+					<button class="btn btn--check" type="submit"><img class="adress__icon" src="images/icons/Send.svg" alt="">Проверить</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+
+	<!-- Section 1 -->
+	<section class="section" id="sectionPizza">
+		<div class="container">
+			<div class="section__header">
+				<h2 class="section__title">Пицца</h2>
+				<button class="btn btn--filter" data-modal="#modal_filter">
+					<img class="section__filter-icon" src="images/icons/Filter.svg" alt="">
+					<span>Фильтры</span>
+				</button>
+			</div>
+
+			<div class="section__inner">
+
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about">
+						<img class="section__img" src="images/section-1.jpg" alt="">
+					</a>
+					<span class="section__note">New</span>
+					<div class="section__info">
+						<h3 class="section__name">Чикен Сладкий Чили</h3>
+						<div class="section__descriptions">Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соу...</div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">от 399 ₽</button>
+							<span class="section__price-old"><del>от 699 ₽</del></span>
+						</div>
+					</div>
+				</div>
+
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section-2.jpg" alt=""></a>
+					<span class="section__note">ХИТ</span>
+					<div class="section__info">
+						<h3 class="section__name">EASY PEASY огуречный расколбас</h3>
+						<div class="section__descriptions">Курица, Лук, Перец Халапеньо...</div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">от 549 ₽</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section-3.jpg" alt=""></a>
+					<div class="section__info">
+						<h3 class="section__name">EASY PEASY чикен а-ля хрен</h3>
+						<div class="section__descriptions">Курица, Лук, Соус Карбонара,...</div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">от 249 ₽</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section-4.jpg" alt=""></a>
+					<div class="section__info">
+						<h3 class="section__name">4 сезона</h3>
+						<div class="section__descriptions">Бекон, Ветчина, Грибы, Курица, Лук, Маслины, Огурцы мари...</div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">от 630 ₽</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- Row 2 -->
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section-4.jpg" alt=""></a>
+					<div class="section__info">
+						<h3 class="section__name">4 сезона</h3>
+						<div class="section__descriptions">Бекон, Ветчина, Грибы, Курица, Лук, Маслины, Огурцы мари...</div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">от 630 ₽</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section-3.jpg" alt=""></a>
+					<div class="section__info">
+						<h3 class="section__name">EASY PEASY чикен а-ля хрен</h3>
+						<div class="section__descriptions">Курица, Лук, Соус Карбонара,...</div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">от 249 ₽</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section-1.jpg" alt=""></a>
+					<div class="section__info">
+						<h3 class="section__name">Чикен Сладкий Чили</h3>
+						<div class="section__descriptions">Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соу...</div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">от 399 ₽</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section-2.jpg" alt=""></a>
+					<div class="section__info">
+						<h3 class="section__name">EASY PEASY огуречный расколбас</h3>
+						<div class="section__descriptions">Курица, Лук, Перец Халапеньо...</div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">от 549 ₽</button>
+						</div>
+					</div>
+				</div>
+
+			</div><!-- /.section__inner -->
+		</div><!-- /.container -->
+	</section><!-- /.section -->
+
+
+
+	<!-- Section 2 -->
+	<section class="section" id="sectionSushi">
+		<div class="container">
+			<div class="section__header">
+				<h2 class="section__title">Суши</h2>
+				<button class="btn btn--filter" data-modal="#modal_filter">
+					<img class="section__filter-icon" src="images/icons/Filter.svg" alt="">
+					<span>Фильтры</span>
+				</button>
+			</div>
+
+			<div class="section__inner">
+
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section__2-1.jpg" alt=""></a>
+					<span class="section__note">New</span>
+					<div class="section__info">
+						<h3 class="section__name">Филадельфия кранч</h3>
+						<div class="section__descriptions">Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">475 ₽</button>
+							<span class="section__price-old"><del>от 699 ₽</del></span>
+						</div>
+					</div>
+				</div>
+
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section__2-2.jpg" alt=""></a>
+					<span class="section__note">ХИТ</span>
+					<div class="section__info">
+						<h3 class="section__name">Филадельфия крем-брюле</h3>
+						<div class="section__descriptions">Сливочный сыр, семга татаки с тростниковым сахаром, соус у...</div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">395 ₽</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section__2-3.jpg" alt=""></a>
+					<div class="section__info">
+						<h3 class="section__name">Супер Филадельфия</h3>
+						<div class="section__descriptions">Действительно много семги, сливочный сыр, огурец, рис, н...</div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">425 ₽</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section__2-4.jpg" alt=""></a>
+					<div class="section__info">
+						<h3 class="section__name">Тигр мама</h3>
+						<div class="section__descriptions">Тигровая креветка, огурец, авокадо, соус Айоли, рис, ик...</div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">525 ₽</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- Row 2 -->
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section__2-1.jpg" alt=""></a>
+					<span class="section__note">New</span>
+					<div class="section__info">
+						<h3 class="section__name">Филадельфия кранч</h3>
+						<div class="section__descriptions">Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">475 ₽</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section__2-2.jpg" alt=""></a>
+					<span class="section__note">ХИТ</span>
+					<div class="section__info">
+						<h3 class="section__name">Филадельфия крем-брюле</h3>
+						<div class="section__descriptions">Сливочный сыр, семга татаки с тростниковым сахаром, соус у...</div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">395 ₽</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section__2-3.jpg" alt=""></a>
+					<div class="section__info">
+						<h3 class="section__name">Супер Филадельфия</h3>
+						<div class="section__descriptions">Действительно много семги, сливочный сыр, огурец, рис, н...</div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">425 ₽</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section__2-4.jpg" alt=""></a>
+					<div class="section__info">
+						<h3 class="section__name">Тигр мама</h3>
+						<div class="section__descriptions">Тигровая креветка, огурец, авокадо, соус Айоли, рис, ик...</div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">525 ₽</button>
+						</div>
+					</div>
+				</div>
+
+			</div><!-- /.section__inner -->
+		</div><!-- /.container -->
+	</section><!-- /.section -->
+
+
+
+	<!-- Section 3 -->
+	<section class="section" id="sectionSnacks">
+		<div class="container">
+			<div class="section__header">
+				<h2 class="section__title">Закуски</h2>
+				<button class="btn btn--filter" data-modal="#modal_filter">
+					<img class="section__filter-icon" src="images/icons/Filter.svg" alt="">
+					<span>Фильтры</span>
+				</button>
+			</div>
+
+			<div class="section__inner">
+
+				<!-- Row 1 -->
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section__3-1.jpg" alt=""></a>
+					<span class="section__note">New</span>
+					<div class="section__info">
+						<h3 class="section__name">Картофель из печи</h3>
+						<div class="section__descriptions">Ароматный запеченный картофель с итальянскими...</div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">475 ₽</button>
+							<span class="section__price-old"><del>от 699 ₽</del></span>
+						</div>
+					</div>
+				</div>
+
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section__3-2.jpg" alt=""></a>
+					<span class="section__note">ХИТ</span>
+					<div class="section__info">
+						<h3 class="section__name">Куриные крылья</h3>
+						<div class="section__descriptions">Куриные крылышки со специями и ароматом копчения.</div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">395 ₽</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section__3-3.jpg" alt=""></a>
+					<div class="section__info">
+						<h3 class="section__name">Куриные кусочки</h3>
+						<div class="section__descriptions">Сочное куриное филе в хрустящей панировке.</div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">425 ₽</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section__3-4.jpg" alt=""></a>
+					<div class="section__info">
+						<h3 class="section__name">Додстер</h3>
+						<div class="section__descriptions">Легендарная горячая закуска с цыпленком, томатами,...</div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">525 ₽</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- Row 2 -->
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section__3-1.jpg" alt=""></a>
+					<span class="section__note">New</span>
+					<div class="section__info">
+						<h3 class="section__name">Картофель из печи</h3>
+						<div class="section__descriptions">Ароматный запеченный картофель с итальянскими...</div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">475 ₽</button>
+							<span class="section__price-old"><del>от 699 ₽</del></span>
+						</div>
+					</div>
+				</div>
+
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section__3-2.jpg" alt=""></a>
+					<span class="section__note">ХИТ</span>
+					<div class="section__info">
+						<h3 class="section__name">Куриные крылья</h3>
+						<div class="section__descriptions">Куриные крылышки со специями и ароматом копчения.</div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">395 ₽</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section__3-3.jpg" alt=""></a>
+					<div class="section__info">
+						<h3 class="section__name">Куриные кусочки</h3>
+						<div class="section__descriptions">Сочное куриное филе в хрустящей панировке.</div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">425 ₽</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section__3-4.jpg" alt=""></a>
+					<div class="section__info">
+						<h3 class="section__name">Додстер</h3>
+						<div class="section__descriptions">Легендарная горячая закуска с цыпленком, томатами,...</div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">525 ₽</button>
+						</div>
+					</div>
+				</div>
+
+			</div><!-- /.section__inner -->
+		</div><!-- /.container -->
+	</section><!-- /.section -->
+
+
+
+	<!-- Section 4 -->
+	<section class="section" id="sectionDesserts">
+		<div class="container">
+			<div class="section__header">
+				<h2 class="section__title">Десерты</h2>
+				<button class="btn btn--filter" data-modal="#modal_filter">
+					<img class="section__filter-icon" src="images/icons/Filter.svg" alt="">
+					<span>Фильтры</span>
+				</button>
+			</div>
+
+			<div class="section__inner">
+
+				<!-- Row 1 -->
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section__4-1.jpg" alt=""></a>
+					<div class="section__info">
+						<h3 class="section__name">Узелки сладкие</h3>
+						<div class="section__descriptions">Мягкие булочки с корицей и сахарной пудрой</div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">475 ₽</button>
+							<span class="section__price-old"><del>от 699 ₽</del></span>
+						</div>
+					</div>
+				</div>
+
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section__4-2.jpg" alt=""></a>
+					<div class="section__info">
+						<h3 class="section__name">Рогалики с клубникой</h3>
+						<div class="section__descriptions">Сладкие рогалики с клубникой, сыром "кремчиз" и сахарной ...</div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">395 ₽</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section__4-3.jpg" alt=""></a>
+					<div class="section__info">
+						<h3 class="section__name">Сырники</h3>
+						<div class="section__descriptions">Нежные сырники из печи с соусом на выбор</div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">425 ₽</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section__4-4.jpg" alt=""></a>
+					<div class="section__info">
+						<h3 class="section__name">Магнат Шоколадный</h3>
+						<div class="section__descriptions">Шоколадное мороженое с кусочк...</div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">525 ₽</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- Row 2 -->
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section__4-1.jpg" alt=""></a>
+					<div class="section__info">
+						<h3 class="section__name">Узелки сладкие</h3>
+						<div class="section__descriptions">Мягкие булочки с корицей и сахарной пудрой</div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">475 ₽</button>
+							<span class="section__price-old"><del>от 699 ₽</del></span>
+						</div>
+					</div>
+				</div>
+
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section__4-2.jpg" alt=""></a>
+					<div class="section__info">
+						<h3 class="section__name">Рогалики с клубникой</h3>
+						<div class="section__descriptions">Сладкие рогалики с клубникой, сыром "кремчиз" и сахарной ...</div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">395 ₽</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section__4-3.jpg" alt=""></a>
+					<div class="section__info">
+						<h3 class="section__name">Сырники</h3>
+						<div class="section__descriptions">Нежные сырники из печи с соусом на выбор</div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">425 ₽</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section__4-4.jpg" alt=""></a>
+					<div class="section__info">
+						<h3 class="section__name">Магнат Шоколадный</h3>
+						<div class="section__descriptions">Шоколадное мороженое с кусочк...</div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">525 ₽</button>
+						</div>
+					</div>
+				</div>
+
+			</div><!-- /.section__inner -->
+		</div><!-- /.container -->
+	</section><!-- /.section -->
+
+
+
+	<!-- Section 5 -->
+	<section class="section" id="sectionDrinks">
+		<div class="container">
+			<div class="section__header">
+				<h2 class="section__title">Напитки</h2>
+				<button class="btn btn--filter" data-modal="#modal_filter">
+					<img class="section__filter-icon" src="images/icons/Filter.svg" alt="">
+					<span>Фильтры</span>
+				</button>
+			</div>
+
+			<div class="section__inner">
+
+				<!-- Row 1 -->
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section__5-1.jpg" alt=""></a>
+					<div class="section__info">
+						<h3 class="section__name">Adrenaline Gamefuel</h3>
+						<div class="section__descriptions"></div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">99 ₽</button>
+							<span class="section__price-old"><del>от 699 ₽</del></span>
+						</div>
+					</div>
+				</div>
+
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section__5-2.jpg" alt=""></a>
+					<div class="section__info">
+						<h3 class="section__name">Pepsi</h3>
+						<div class="section__descriptions"></div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">99 ₽</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section__5-3.jpg" alt=""></a>
+					<div class="section__info">
+						<h3 class="section__name">Pepsi MAX</h3>
+						<div class="section__descriptions"></div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">99 ₽</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section__5-4.jpg" alt=""></a>
+					<div class="section__info">
+						<h3 class="section__name">Mirinda</h3>
+						<div class="section__descriptions"></div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">99 ₽</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- Row 2 -->
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section__5-1.jpg" alt=""></a>
+					<div class="section__info">
+						<h3 class="section__name">Adrenaline Gamefuel</h3>
+						<div class="section__descriptions"></div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">99 ₽</button>
+							<span class="section__price-old"><del>от 699 ₽</del></span>
+						</div>
+					</div>
+				</div>
+
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section__5-2.jpg" alt=""></a>
+					<div class="section__info">
+						<h3 class="section__name">Pepsi</h3>
+						<div class="section__descriptions"></div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">99 ₽</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section__5-3.jpg" alt=""></a>
+					<div class="section__info">
+						<h3 class="section__name">Pepsi MAX</h3>
+						<div class="section__descriptions"></div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">99 ₽</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section__5-4.jpg" alt=""></a>
+					<div class="section__info">
+						<h3 class="section__name">Mirinda</h3>
+						<div class="section__descriptions"></div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">99 ₽</button>
+						</div>
+					</div>
+				</div>
+
+			</div><!-- /.section__inner -->
+		</div><!-- /.container -->
+	</section><!-- /.section -->
+
+
+
+	<!-- Section 6 -->
+	<section class="section" id="sectionSauce">
+		<div class="container">
+			<div class="section__header">
+				<h2 class="section__title">Соусы</h2>
+				<button class="btn btn--filter" data-modal="#modal_filter">
+					<img class="section__filter-icon" src="images/icons/Filter.svg" alt="">
+					<span>Фильтры</span>
+				</button>
+			</div>
+
+			<div class="section__inner">
+
+				<!-- Row 1 -->
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section__6-1.jpg" alt=""></a>
+					<span class="section__note">New</span>
+					<div class="section__info">
+						<h3 class="section__name">Сырный соус</h3>
+						<div class="section__descriptions"></div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">49 ₽</button>
+							<span class="section__price-old"><del>от 699 ₽</del></span>
+						</div>
+					</div>
+				</div>
+
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section__6-2.jpg" alt=""></a>
+					<span class="section__note">ХИТ</span>
+					<div class="section__info">
+						<h3 class="section__name">Барбекю</h3>
+						<div class="section__descriptions"></div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">49 ₽</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section__6-3.jpg" alt=""></a>
+					<div class="section__info">
+						<h3 class="section__name">Ранч</h3>
+						<div class="section__descriptions"></div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">49 ₽</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section__6-4.jpg" alt=""></a>
+					<div class="section__info">
+						<h3 class="section__name">Малиновое варенье</h3>
+						<div class="section__descriptions"></div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">49 ₽</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- Row 2 -->
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section__6-1.jpg" alt=""></a>
+					<div class="section__info">
+						<h3 class="section__name">Сырный соус</h3>
+						<div class="section__descriptions"></div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">49 ₽</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section__6-2.jpg" alt=""></a>
+					<div class="section__info">
+						<h3 class="section__name">Барбекю</h3>
+						<div class="section__descriptions"></div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">49 ₽</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section__6-3.jpg" alt=""></a>
+					<div class="section__info">
+						<h3 class="section__name">Ранч</h3>
+						<div class="section__descriptions"></div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">49 ₽</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section__6-4.jpg" alt=""></a>
+					<div class="section__info">
+						<h3 class="section__name">Малиновое варенье</h3>
+						<div class="section__descriptions"></div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">49 ₽</button>
+						</div>
+					</div>
+				</div>
+
+			</div><!-- /.section__inner -->
+		</div><!-- /.container -->
+	</section><!-- /.section -->
+
+
+
+	<!-- Section 7 -->
+	<section class="section" id="sectionCombo">
+		<div class="container">
+			<div class="section__header">
+				<h2 class="section__title">Комбо</h2>
+				<button class="btn btn--filter" data-modal="#modal_filter">
+					<img class="section__filter-icon" src="images/icons/Filter.svg" alt="">
+					<span>Фильтры</span>
+				</button>
+			</div>
+
+			<div class="section__inner">
+
+				<!-- Row 1 -->
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section__7-1.jpg" alt=""></a>
+					<span class="section__note">New</span>
+					<div class="section__info">
+						<h3 class="section__name">2 пиццы</h3>
+						<div class="section__descriptions">Самое популярное комбо из 2 пицц 30 см: Карбонара + Аррива</div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">475 ₽</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section__7-2.jpg" alt=""></a>
+					<div class="section__info">
+						<h3 class="section__name">3 пиццы</h3>
+						<div class="section__descriptions">Сырная + Пепперони фреш + Ветчина и сыр</div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">395 ₽</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section__7-3.jpg" alt=""></a>
+					<div class="section__info">
+						<h3 class="section__name">2 пиццы и напиток</h3>
+						<div class="section__descriptions">Карбонара + Аррива + Pepsi</div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">425 ₽</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section__7-4.jpg" alt=""></a>
+					<div class="section__info">
+						<h3 class="section__name">4 Додстера</h3>
+						<div class="section__descriptions"></div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">525 ₽</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- Row 2 -->
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section__7-1.jpg" alt=""></a>
+					<span class="section__note">New</span>
+					<div class="section__info">
+						<h3 class="section__name">2 пиццы</h3>
+						<div class="section__descriptions">Самое популярное комбо из 2 пицц 30 см: Карбонара + Аррива</div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">475 ₽</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section__7-2.jpg" alt=""></a>
+					<div class="section__info">
+						<h3 class="section__name">3 пиццы</h3>
+						<div class="section__descriptions">Сырная + Пепперони фреш + Ветчина и сыр</div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">395 ₽</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section__7-3.jpg" alt=""></a>
+					<div class="section__info">
+						<h3 class="section__name">2 пиццы и напиток</h3>
+						<div class="section__descriptions">Карбонара + Аррива + Pepsi</div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">425 ₽</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="section__item">
+					<a href="#" data-modal="#modal_about"><img class="section__img" src="images/section__7-4.jpg" alt=""></a>
+					<div class="section__info">
+						<h3 class="section__name">4 Додстера</h3>
+						<div class="section__descriptions"></div>
+						<div class="section__footer">
+							<button class="btn">Выбрать</button>
+							<button class="section__price btn--price" type="button">525 ₽</button>
+						</div>
+					</div>
+				</div>
+
+			</div><!-- /.section__inner -->
+		</div><!-- /.container -->
+	</section><!-- /.section -->
+
+
+
+	<!-- Delivery -->
+	<div class="delivery">
+		<div class="container">
+			<h1 class="delivery__title">Доставка пиццы в Москве</h1>
+			<div class="delivery__text" id="deliveryText">
+				<p>
+					Захотелось чего-то вкусного и сытного? Желание простое и понятное, только в холодильнике все не то, и до магазина идти лень. Все пропало? Нет. Недорого заказать пиццу в Москве очень просто! Вам на помощь спешит супергерой – Domino’s Pizza! Как у всякого супергероя, у Domino’s Pizza есть свои суперсилы: восхитительный вкус продукции из отборных ингредиентов; широкий ассортимент, включающий легендарные, фирменные и классические виды, для вегетарианцев и любителей экспериментировать; быстрая и бесплатная доставка пиццы в течение 30 минут, чтобы вкусное и ароматное блюдо не успевало остыть.
+				</p>
+
+				<p>
+					<b>Как сделать заказ</b><br>
+					Доставка пиццы от Domino’s – это когда Вам не нужно никуда ехать или звонить, ведь есть Интернет. Никогда еще заказ пиццы на дом в Москве не был таким простым! Чтобы заказать пиццу онлайн, Вам необходимо: выбрать понравившийся вариант и количество порций; положить желаемое в «Корзину»;не уходить далеко, так как вкусная пицца на заказ с доставкой уже мчится к Вам из ближайшей пиццерии Domino’s. И не забудьте оплатить заказ курьеру!
+				</p>
+
+				<p>
+					<b>Как сделать заказ</b><br>
+					Доставка пиццы от Domino’s – это когда Вам не нужно никуда ехать или звонить, ведь есть Интернет. Никогда еще заказ пиццы на дом в Москве не был таким простым! Чтобы заказать пиццу онлайн, Вам необходимо: выбрать понравившийся вариант и количество порций; положить желаемое в «Корзину»;не уходить далеко, так как вкусная пицца на заказ с доставкой уже мчится к Вам из ближайшей пиццерии Domino’s. И не забудьте оплатить заказ курьеру!
+				</p>
+
+				<p>
+					<b>Как сделать заказ</b><br>
+					Доставка пиццы от Domino’s – это когда Вам не нужно никуда ехать или звонить, ведь есть Интернет. Никогда еще заказ пиццы на дом в Москве не был таким простым! Чтобы заказать пиццу онлайн, Вам необходимо: выбрать понравившийся вариант и количество порций; положить желаемое в «Корзину»;не уходить далеко, так как вкусная пицца на заказ с доставкой уже мчится к Вам из ближайшей пиццерии Domino’s. И не забудьте оплатить заказ курьеру!
+				</p>
+			</div>
+			<a class="delivery__show" id="deliveryShow" href="#">Показать полностью</a>
+		</div>
+	</div>
+
+
+
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<div class="footer__col">
+					<img class="footer__logo" src="images/footer__logo.svg" alt="">
+					
+				</div>
+
+				<div class="footer__col">
+					<h3 class="footer__title">Куда пицца</h3>
+					<ul class="footer__nav">
+						<li>
+							<a class="footer__link" href="#">О компании</a>
+						</li>
+						<li>
+							<a class="footer__link" href="#">Пользовательское соглашение</a>
+						</li>
+						<li>
+							<a class="footer__link" href="#">Условия гарантии</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer__col">
+					<h3 class="footer__title">Помощь</h3>
+					<ul class="footer__nav">
+						<li>
+							<a class="footer__link" href="#">Ресторан</a>
+						</li>
+						<li>
+							<a class="footer__link" href="#">Контакты</a>
+						</li>
+						<li>
+							<a class="footer__link" href="#">Поддержка</a>
+						</li>
+						<li>
+							<a class="footer__link" href="#">Отследить заказ</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer__col">
+					<h3 class="footer__title">Контакты</h3>
+					<ul class="contacts">
+						<li>
+							<div class="contacts__item">
+								<img class="contacts__icon" src="images/icons/phone.svg" alt="">
+								<a class="contacts__link" href="tel:+7 (926) 223-10-11">+7 (926) 223-10-11</a>
+							</div>
+						</li>
+						<li>
+							<div class="contacts__item">
+								<img class="contacts__icon contacts__icon--map" src="images/icons/pin-map.svg" alt="">
+								<a class="contacts__link" href="#">Москва, ул. Юных Ленинцев, д.99</a>
+							</div>
+						</li>
+						<li>
+							<div class="contacts__social">
+								<img class="contacts__icon" src="images/icons/fb.svg" alt="">
+								<a href="#" target="_blank">Facebook</a> 
+								
+								<img class="contacts__icon" src="images/icons/inst.svg" alt="">
+								<a href="#" target="_blank">Instagram</a>
+
+							</div>
+						</li>
+					</ul>
+				</div>
+				<span class="footer__copyright">© Copyright 2021 — Куда Пицца</span>
+
+			</div>
+		</div>
+	</footer>
+
+
+
+	<!-- Modals -->
+	<div class="modal" id="modal_about">
+		<div class="modal__dialog">
+
+			<button class="modal__close modal__close--about" type="button" data-close>
+				<img class="about__cross" src="images/icons/Cross-big.svg" alt="">
+				<img class="about__cross-gray" src="images/icons/Cross-gray.svg" alt="">
+
+			</button>
+
+			<div class="about">
+				<div class="about__left">
+					<img class="about__img" src="images/about.jpg" alt="">
+					<span class="about__note">new</span>
+				</div>
+				<div class="about__right">
+					<div class="about__header">
+						<img class="about__header-icon" src="images/icons/Fire.svg" alt="">
+						<h3 class="about__title">Пепперони по-деревенски</h3>
+						<button class="about__info"><img src="images/icons/Info.svg" alt=""></button>
+					</div>
+					<div class="about__compound">
+						<div class="about__compound-item">
+							<button class="about__compound-btn">
+								<img class="about__icon about__icon--cheese" src="images/icons/cheese.svg" alt="">
+							</button>
+							<div class="about__compound-name">Моцарелла</div>
+						</div>
+						<div class="about__compound-item">
+							<button class="about__compound-btn">
+								<img class="about__icon about__icon--cucumber" src="images/icons/cucumber.svg" alt="">
+								<img class="about__icon-cross" src="images/icons/Cross.svg" alt="">
+							</button>
+							<div class="about__compound-name">Огурцы маринованные</div>
+						</div>
+						<div class="about__compound-item">
+							<button class="about__compound-btn">
+								<img class="about__icon about__icon--pepperoni" src="images/icons/pepperoni.svg" alt="">
+							</button>
+							<div class="about__compound-name">Пепперони</div>
+						</div>
+						<div class="about__compound-item">
+							<button class="about__compound-btn">
+								<img class="about__icon about__icon--sauce" src="images/icons/sauce-a.svg" alt="">
+							</button>
+							<div class="about__compound-name">Томатный соус</div>
+						</div>
+					</div>
+
+					<div class="about__tabs">
+						<button class="about__tab" type="button">Традиционное</button>
+						<button class="about__tab" type="button">Тонкое</button>
+					</div>
+
+					<div class="about__tabs">
+						<button class="about__tab-size" type="button">20 см</button>
+						<button class="about__tab-size" type="button">28 см</button>
+						<button class="about__tab-size" type="button">33 см</button>
+					</div>
+
+					<h3 class="about__title-add">Добавьте в пиццу</h3>
+					<div class="about__compound">
+
+						<div class="about__compound-item">
+							
+							<button class="about__compound-btn" id="tabsAddBtn">
+								<img class="about__icon about__icon--cheese" src="images/icons/cheese.svg" alt="">
+								<img class="about__compound-icon" src="images/icons/check.svg" alt="">
+							</button>
+							<div class="about__compound-name">Моцарелла</div>
+							<div class="about__price">59 ₽</div>
+						</div>
+
+						<div class="about__compound-item">
+							<button class="about__compound-btn" id="tabsAddBtn">
+								<img class="about__icon about__icon--mushrooms" src="images/icons/mushrooms.svg" alt="">
+								<img class="about__compound-icon" src="images/icons/check.svg" alt="">
+							</button>
+							<div class="about__compound-name">Шампиньоны</div>
+							<div class="about__price">59 ₽</div>
+						</div>
+
+						<div class="about__compound-item">
+							<button class="about__compound-btn" id="tabsAddBtn">
+								<img class="about__icon about__icon--onion" src="images/icons/onion.svg" alt="">
+								<img class="about__compound-icon" src="images/icons/check.svg" alt="">
+							</button>
+							<div class="about__compound-name">Красный лук</div>
+							<div class="about__price">59 ₽</div>
+						</div>
+
+						<div class="about__compound-item">
+							
+							<button class="about__compound-btn" id="tabsAddBtn">
+								<img class="about__icon about__icon--pepper" src="images/icons/pepper.svg" alt="">
+								<img class="about__compound-icon" src="images/icons/check.svg" alt="">
+							</button>
+							<div class="about__compound-name">Сладкий перец</div>
+							<div class="about__price">59 ₽</div>
+						</div>
+
+					</div><!-- /.about__compound -->
+
+					<div class="about__footer">
+						<div class="about__total">
+							<span class="about__sum">Итого: 379 ₽</span>
+							<span class="about_weight">400 г</span>
+						</div>
+						<button type="submit" class="about__footer-btn">Добавить</button>
+					</div>
+
+
+
+				</div><!-- /.about__right -->
+			</div><!-- /.about -->
+		</div><!-- /.modal__dialog -->
+	</div><!-- /.modal -->
+
+
+
+	<!-- Filter -->
+	<div class="modal" id="modal_filter">
+		<div class="modal__dialog modal__dialog--filter">
+
+			<button class="modal__close modal__close--gray" type="button" data-close>
+				<img src="images/icons/Cross-gray.svg" alt="">
+			</button>
+
+			<div class="filter">
+				<h3 class="filter__header">Фильтры</h3>
+				<div class="filter__item">
+					<div class="filter__name">Общее</div>
+					<div class="filter__group">
+						<button class="filter__btn class" id="filterTabsBtn">Хит</button>
+						<button class="filter__btn class" id="filterTabsBtn">Новинка</button>
+						<button class="filter__btn class" id="filterTabsBtn">С мясом</button>
+						<button class="filter__btn class" id="filterTabsBtn">Вегетарианская</button>
+						<button class="filter__btn class" id="filterTabsBtn">С курицей</button>
+						<button class="filter__btn class" id="filterTabsBtn">Без лука</button>
+						<button class="filter__btn class" id="filterTabsBtn">С грибами</button>
+						<button class="filter__btn class" id="filterTabsBtn">С морепродуктами</button>
+						<button class="filter__btn class" id="filterTabsBtn">Барбекью</button>
+					</div>
+				</div>
+
+				<div class="filter__item">
+					<div class="filter__name">Сыр</div>
+					<div class="filter__group">
+						<button class="filter__btn" id="filterTabsBtn">Реджанито</button>
+						<button class="filter__btn" id="filterTabsBtn">Моцарелла</button>
+						<button class="filter__btn" id="filterTabsBtn">Чеддер</button>
+						<button class="filter__btn" id="filterTabsBtn">С голубой плесенью</button>
+						<button class="filter__btn" id="filterTabsBtn">Смесь итальянских сыров</button>
+						<button class="filter__btn" id="filterTabsBtn">Мягкий молодой сыр</button>
+					</div>
+				</div>
+
+				<div class="filter__item">
+					<div class="filter__name">Мясо</div>
+					<div class="filter__group">
+						<button class="filter__btn" id="filterTabsBtn">Пепперони</button>
+						<button class="filter__btn" id="filterTabsBtn">Свинина</button>
+						<button class="filter__btn" id="filterTabsBtn">Ветчина</button>
+						<button class="filter__btn" id="filterTabsBtn">Бекон</button>
+						<button class="filter__btn" id="filterTabsBtn">Говядина</button>
+						<button class="filter__btn" id="filterTabsBtn">Чоризо</button>
+						<button class="filter__btn" id="filterTabsBtn">Колбаски</button>
+						<button class="filter__btn" id="filterTabsBtn">Куриная грудка</button>
+					</div>
+				</div>
+
+				<div class="filter__item">
+					<div class="filter__name">Компонент</div>
+					<div class="filter__group">
+						<button class="filter__btn" id="filterTabsBtn">Креветка</button>
+						<button class="filter__btn" id="filterTabsBtn">Ананасы</button>
+						<button class="filter__btn" id="filterTabsBtn">Шампиньоны</button>
+						<button class="filter__btn" id="filterTabsBtn">Лук</button>
+						<button class="filter__btn" id="filterTabsBtn">Перец халапеньо</button>
+						<button class="filter__btn" id="filterTabsBtn">Орегано</button>
+						<button class="filter__btn" id="filterTabsBtn">Зеленый перец</button>
+						<button class="filter__btn" id="filterTabsBtn">Томаты</button>
+						<button class="filter__btn" id="filterTabsBtn">Чеснок</button>
+						<button class="filter__btn" id="filterTabsBtn">Красный перец</button>
+						<button class="filter__btn" id="filterTabsBtn">Оливки</button>
+						<button class="filter__btn" id="filterTabsBtn">Маслины</button>
+						<button class="filter__btn" id="filterTabsBtn">Клубника</button>
+						<button class="filter__btn" id="filterTabsBtn">Смесь итальянских трав</button>
+					</div>
+				</div>
+
+				<div class="filter__footer">
+					<button class="filter__button filter__button--del" type="button">Сбросить</button>
+					<button class="filter__button filter__button--appl" type="button">Применить</button>
+				</div>
+			</div>
+		</div><!-- /.modal__dialog -->
+	</div><!-- /.modal -->
+
+
+</div><!-- /.page -->
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/app.js"></script>
+
+
+
+
+</body>
+</html>

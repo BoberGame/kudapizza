@@ -1,0 +1,140 @@
+// main_file: style.less
+
+.header {
+	position: relative;
+	width: 100%;
+
+	&:before {
+		content: "";
+		height: 0.1rem;
+		width: 100%;
+
+		position: absolute;
+		top: 4rem;
+		left: 0;
+		z-index: 999;
+
+		background: @gray;
+	}
+
+	&:after {
+		content: "";
+		height: 0.1rem;
+		width: 100%;
+
+		position: absolute;
+		top: 100%;
+		left: 0;
+		z-index: 999;
+
+		background: @gray;
+	}
+}
+
+.header__first {
+	max-height: 4rem;
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem 0;
+	position: relative;
+
+	font-size: 1.4rem;
+	color: @black;
+}
+
+.header__first-left {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	@media @mobile {
+		width: 100%;
+	}
+
+	@media @mobile-x {
+		font-size: 1.2rem;
+	}
+}
+
+.header__city {
+	display: flex;
+	align-items: center;
+}
+
+.header__pin-icon {
+	width: 1.3rem;
+	height: 2rem; 
+	margin-right: 1.1rem;
+}
+.header__city-name {
+	text-decoration: none;
+	color: inherit;
+}
+.header__down-icon {
+	width: 1.2rem;
+	height: 1.2rem;
+	margin-left: 0.8rem;
+	margin-right: 4rem;
+}
+
+.header__adress {
+	margin-right: 4rem;
+	color: inherit;
+	text-decoration: none;
+
+	@media @tablet {
+		display: none;
+	}
+}
+
+.header__first-right {
+	display: flex;
+	align-items: center;
+}
+
+.header__time {
+	margin-right: 4rem;
+
+	@media @tablet-sm {
+		display: none;
+	}
+}
+
+.header__second {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-width: 129rem;
+	max-height: 6.4rem;
+	padding: 1.2rem 0.4rem 1.2rem;
+
+	background: @white;
+
+	&.fixed {
+		position: fixed;
+		top: 0;
+		z-index: 998;
+
+		border-bottom: 1px solid @gray;
+
+		@media @tablet {
+			width: 100%;
+			left: 0;
+		}
+	}
+
+	@media @laptop {
+		min-width: 0;
+		padding: 1.2rem 2rem 1.2rem;
+	}
+}
+
+.header__logo {
+	width: 14.1rem;
+	margin-right: 6.4rem;
+}
+
+.header__bag-icon {
+	margin-right: 0.8rem;
+	width: 2.4rem;
+}

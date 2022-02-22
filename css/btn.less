@@ -1,0 +1,101 @@
+// main_file: style.less
+
+.btn {
+	padding: 1.3rem 3.2rem;
+	margin: 0;
+	max-height: 4.8rem;
+
+	color: @white;
+	background: @orange;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	font-size: 1.6rem;
+	font-family: inherit;
+	text-align: center;
+	cursor: pointer;
+	line-height: 1.37;
+	transition: background .1s linear, border-color .1s linear;
+
+	@media @mobile-x {
+		display: none;
+	}
+
+	&:hover {
+		background: #cb5b10;
+	}
+
+	&:focus {
+		outline: 0;
+		border-color: #36abc7;
+	}
+
+	&--bag {
+		display: flex;
+		align-items: center;
+		padding: 0.95rem 1.6rem;
+		max-height: 4rem;
+
+		@media @tablet {
+			display: none;
+		}
+	}
+
+	&--check {
+		padding: 1.3rem 3.2rem;
+		max-height: 4.8rem;
+		max-width: 15rem;
+
+		@media @mobile-sm {
+			display: block; 
+			max-height: 4.4rem;
+			max-width: 4.4rem;
+
+			font-size: 0;
+			padding: 1.4rem;
+			border-radius: 6px;
+		} 
+
+
+	}
+
+	&--filter {
+		display: flex;
+		align-items: center;
+		max-width: 12.6rem;
+		max-height: 4rem;
+
+		background: @white;
+		padding: 0.9rem 1.6rem;
+		border: 1px solid @gray;
+		color: @black;
+
+		&:hover {
+			background: @white;
+			border-color: @orange;
+		}
+
+		&:focus {
+			border-color: @orange;
+		}
+	}
+
+	&--price {
+		background: none;
+		border: 0;
+		padding: 0;
+		margin: 0;
+
+		@media @mobile-x {
+			padding: 0.7rem 1.6rem;
+			min-width: 9.3rem;
+			max-height: 3.2rem;
+
+			background: @light-primary;
+			border-radius: 6px;
+
+		}
+
+	}
+
+	
+}

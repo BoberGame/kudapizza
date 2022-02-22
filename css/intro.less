@@ -1,0 +1,97 @@
+// main_file: style.less
+
+.intro {
+}
+
+.intro__inner {
+}
+
+.intro__nav {
+	margin: 0 -1.5rem;
+	display: flex;
+	padding: 3rem 0;
+
+	@media @laptop {
+		margin: 0 -0.6rem;
+	}
+}
+
+.intro__nav-link {
+	display: flex;
+	text-align: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 2rem 4rem;
+	margin: 0 1.5rem;
+	max-width: 13.5rem;
+	max-height: 10.4rem;
+
+	border: 1px solid @gray;
+	border-radius: 1.2rem;
+	text-decoration: none;
+
+	@media @laptop {
+		margin: 0 0.6rem;
+	}
+}
+
+.intro__nav-icon {
+	width: 3.2rem;
+	height: 3.2rem;
+	margin-bottom: 0.8rem;
+
+	fill: @orange;
+}
+
+.intro__nav-cat {
+	font-size: 1.8rem;
+
+	color: @black;
+	text-decoration: none;
+	line-height: 1.3;
+
+	&--active {
+		color: @red;
+	}
+}
+
+.intro__action {
+	// display: flex;
+	margin: 0 -1.5rem;
+}
+
+.intro__action-col {
+	position: relative;
+	max-height: 34.3rem;
+	margin: 0 1.5rem;
+	min-width: 0;
+
+	@media @mobile {
+		max-width: 28rem;
+		max-height: 32rem;
+	}
+
+	a {
+		text-decoration: none;
+	}
+}
+
+.intro__action-img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.intro__action-text {
+	position: absolute;
+	bottom: 2rem;
+	left: 2rem;
+	z-index: 1;
+
+	max-width: 24rem;
+
+	font-size: 2rem;
+	font-weight: 600;
+	line-height: 1.4;
+	color: @white;
+}

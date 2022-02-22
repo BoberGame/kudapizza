@@ -1,0 +1,89 @@
+// main_file: style.less
+
+.modal {
+	display: none;
+	width: 100%;
+	height: 100%;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+
+	overflow: auto;
+	background-color: fade(@black, 80%);
+	// backdrop-filter: blur(32px);
+
+	&.show {
+		display: flex;
+	}
+
+}
+
+.modal__dialog {
+	width: 100%;
+	max-width: 107rem;
+	margin: auto;
+	position: relative;
+
+	background: @white;
+	border-radius: 24px;
+
+	transform: scale(0);
+	transition: transform .2s linear;
+
+	&--filter {
+		max-width: 52rem;
+		// height: 100vh;
+		margin: auto 0 auto auto;
+		border-radius: 0;
+
+		@media @tablet {
+			height: auto;
+		}
+
+		@media @mobile-sm {
+			width: 39rem;
+		}
+
+		@media @mobile-sm {
+			width: 100%;
+		}
+	}
+}
+
+.modal__close {
+	padding: 0;
+	margin: 0;
+	width: 3.2rem;
+	height: 3.2rem;
+
+	position: absolute;
+	right: -6rem;
+	top: 0;
+	z-index: 2;
+
+	background: none;
+	border: 0;
+	color: transparent;
+	cursor: pointer;
+	transition: transform .1s linear;
+
+	&:hover {
+		transform: translateY(-3px);
+	}
+
+	&--gray {
+		top: 4rem;
+		right: 2rem;
+	}
+
+	&--about {
+		@media @mobile {
+			top: 2rem;
+			right: 1rem;
+		}
+
+	}
+
+}
